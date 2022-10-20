@@ -1,0 +1,109 @@
+.card-container, .front, .back {
+	width: 20rem;
+	height: 25rem;
+}
+.card-container {
+	margin: 5rem;
+}
+.front, .back {
+	box-sizing: border-box;
+	padding: 2rem;
+	border-radius: 4px;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .25);
+
+	font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
+	font-size: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+ .front {
+    background-color: black;
+
+}
+
+.frontimage{
+    border-radius: 50%;
+}
+
+
+ .back 
+ {
+	background-color: black;
+}
+
+.card-container {
+	position: relative;
+}
+
+
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	overflow: hidden;
+	transition: transform .8s ease;
+}
+.back {
+	transform: rotateY(180deg);
+}
+.card-container:hover .front {
+	transform: rotateY(-180deg);
+}
+.card-container:hover .back {
+	transform: rotateY(0deg);
+}
+
+.card-container {
+	perspective: 75rem;
+}
+
+
+
+/* second card */
+
+.bottomclass{
+
+    background-color:black ;
+    height: 500px;
+    width:500px;
+    color:#fff;
+}
+.oslinImg{
+    width: 150px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 150px;
+background-color: black ;
+}
+
+.icons{
+    text-align: center;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

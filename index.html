@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+              </ul>
+      </nav>
+    <div class="header-text">
+        <h1 class="text-warning">Web Development </h1>
+        <h3>Hi I'm Zoe Daniels from South Africa</h3>
+     </div>
+    </div>
+    <div style="position:relative; left:80px; top:10px; background-color:black;">
+    </div>
+    <!--------about------->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img scr ="img/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub title">About Me</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, odit accusamus vero saepe facilis earum, ipsa officia dolor voluptas consequatur beatae animi inventore dicta laudantium, error incidunt quidem ipsam ex!</p>
+
+                <div class="tab-titles">
+                   <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                   <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                   <p class="tab-links"onclick="opentab('edcucation')">Education</p> 
+                </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS apps</li>
+                    </ul>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-current</span><br>UK/UK design training at ET institue</li>
+                            <li><span>2021-2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2020-2020</span><br>UK/UX Design Executive at col Degital LTD.</li>
+                            <li><span>2019-2019</span><br>Internship at ekart ecommerce</li>
+                         </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                       <ul>
+                        <li><span>2019</span><br>UI/UX Training at ET Institute</li>
+                        <li><span>2019</span><br>MBA from MIT Bangalore.</li>
+                        <li><span>2019</span><br>BBA from ISM Banglore.</li>
+
+                       </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablinks.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");    
+        }
+    
+</script>
+ 
+
+    
+    </script>
+<!--------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio hic doloribus maxime, numquam voluptas soluta laboriosam accusantium commodi animi, in dolores enim accusamus perspiciatis corrupti asperiores, ipsum totam expedita?</p>
+                <a href="#">learn more</a>
+</div>
+<div>
+                <h2>UX/UX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio hic doloribus maxime, numquam voluptas soluta laboriosam accusantium commodi animi, in dolores enim accusamus perspiciatis corrupti asperiores, ipsum totam expedita?</p>
+                <a href="#">learn more</a>
+</div>
+<div>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio hic doloribus maxime, numquam voluptas soluta laboriosam accusantium commodi animi, in dolores enim accusamus perspiciatis corrupti asperiores, ipsum totam expedita?</p>
+                <a href="#">learn more</a>
+</div>
+</div>
+</div>
+<!------------portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="img/shyam-mishra-0WjJZMyc-XU-unsplash (1).jpg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <P>The app connects you to the takented people around the world.
+                    Download it from the play store.</P>
+                    <a href='#'></a>
+               </div>
+        </div>
+        <div class="work">
+            <img src="img/hector-achautla-p3WaW1XLQfo-unsplash.jpg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app conects you to many talented people all around the world.
+                    Download it from play store.</p>
+            </div>
+        </div>
+        <div class="work">
+            <img src="img/sara-kurfess-YddMIRck34I-unsplash.jpg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app contents you to many talented people all around the world.
+                    Download it from play store.</p>
+                <a href="#"><i class="fas fa=external-link-alt"></i></a>
+                
+
+            
+        </div>
+
+        </div>
+            
+        </div>
+    </div>
+
+</div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var contents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+}
+</script>
+            </div>
+
+            
+                
+   
+    
+
+
+            </script>
+                    </ul>
+                <!--Contact-->
+                <section id="contact">
+                    <h2>Contact</h2>
+                <div class="container">
+                    <form action=https://formspree.io/f/maykbkyv method="POST" target="blank">
+                        <div>
+                            <label for="#firstname"></label>
+                            <input id="firstname" name="firstName" type="text" placeholder="Enter your name" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="#firstname"></label>
+                            <input id="surname" name="surname" type="text" placeholder="Enter your surname" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="#firstname"></label>
+                            <textarea name="message" cols="30" rows="10"  type="text" placeholder="Enter your Message:" required></textarea>></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
+                </div>
+               
+                
+            
+
+             </div>
+            </div>
+        </div>
+    </div>
+ 
+  
+
+    </header>
+</body>
+</html>

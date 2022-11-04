@@ -1,270 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div id="header">
-      <nav>
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-              </ul>
-      </nav>
-    <div class="header-text">
-        <h1 class="text-warning">Web Development </h1>
-        <h3>Hi I'm Zoe Daniels from South Africa</h3>
-     </div>
-    </div>
-    <div style="position:relative; left:80px; top:10px; background-color:black;">
-    </div>
-    <!--------about------->
-    <div id="about">
-        <div class="row">
-            <div class="about-col-1">
-                <img scr ="img/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub title">About Me</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, odit accusamus vero saepe facilis earum, ipsa officia dolor voluptas consequatur beatae animi inventore dicta laudantium, error incidunt quidem ipsam ex!</p>
-
-                <div class="tab-titles">
-                   <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
-                   <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                   <p class="tab-links"onclick="opentab('edcucation')">Education</p> 
-                </div>
-
-            <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web App Development</li>
-                        <li><span>App Development</span><br>Building Android/IOS apps</li>
-                    </ul>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2022-current</span><br>UK/UK design training at ET institue</li>
-                            <li><span>2021-2021</span><br>Team lead at StarApp LLC.</li>
-                            <li><span>2020-2020</span><br>UK/UX Design Executive at col Degital LTD.</li>
-                            <li><span>2019-2019</span><br>Internship at ekart ecommerce</li>
-                         </ul>
-                    </div>
-
-                    <div class="tab-content" id="education">
-                       <ul>
-                        <li><span>2019</span><br>UI/UX Training at ET Institute</li>
-                        <li><span>2019</span><br>MBA from MIT Bangalore.</li>
-                        <li><span>2019</span><br>BBA from ISM Banglore.</li>
-
-                       </ul> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-content");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablinks.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");    
-        }
-    
-</script>
- 
-
-    
-    </script>
-<!--------services---------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio hic doloribus maxime, numquam voluptas soluta laboriosam accusantium commodi animi, in dolores enim accusamus perspiciatis corrupti asperiores, ipsum totam expedita?</p>
-                <a href="#">learn more</a>
-</div>
-<div>
-                <h2>UX/UX</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio hic doloribus maxime, numquam voluptas soluta laboriosam accusantium commodi animi, in dolores enim accusamus perspiciatis corrupti asperiores, ipsum totam expedita?</p>
-                <a href="#">learn more</a>
-</div>
-<div>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio hic doloribus maxime, numquam voluptas soluta laboriosam accusantium commodi animi, in dolores enim accusamus perspiciatis corrupti asperiores, ipsum totam expedita?</p>
-                <a href="#">learn more</a>
-</div>
-</div>
-</div>
-<!------------portfolio----------------->
-<div id="portfolio">
-    <div class="container">
-    <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-        <div class="work">
-            <img src="img/shyam-mishra-0WjJZMyc-XU-unsplash (1).jpg">
-            <div class="layer">
-                <h3>Social Media App</h3>
-                <P>The app connects you to the takented people around the world.
-                    Download it from the play store.</P>
-                    <a href='#'></a>
-               </div>
-        </div>
-        <div class="work">
-            <img src="img/hector-achautla-p3WaW1XLQfo-unsplash.jpg">
-            <div class="layer">
-                <h3>Social Media App</h3>
-                <p>The app conects you to many talented people all around the world.
-                    Download it from play store.</p>
-            </div>
-        </div>
-        <div class="work">
-            <img src="img/sara-kurfess-YddMIRck34I-unsplash.jpg">
-            <div class="layer">
-                <h3>Social Media App</h3>
-                <p>The app contents you to many talented people all around the world.
-                    Download it from play store.</p>
-                <a href="#"><i class="fas fa=external-link-alt"></i></a>
-                
-
-            
-        </div>
-
-        </div>
-            
-        </div>
-    </div>
-
-</div>
-<script>
-
-var tablinks = document.getElementsByClassName("tab-links");
-var contents = document.getElementsByClassName("tab-contents");
-
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-
-}
-</script>
-            </div>
-
-            
-                
-   
-    
-
-
-            </script>
-                    </ul>
-                <!--Contact-->
-                <section id="contact">
-                    <h2>Contact</h2>
-                <div class="container">
-                    <form action=https://formspree.io/f/maykbkyv method="POST" target="blank">
-                        <div>
-                            <label for="firstname"></label>
-                            <input id="firstname" name="firstName" type="text" placeholder="Enter your name" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="#firstname"></label>
-                            <input id="surname" name="surname" type="text" placeholder="Enter your surname" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="#firstname"></label>
-                            <textarea name="message" cols="30" rows="10"  type="text" placeholder="Enter your Message:" required></textarea>></textarea>
-                        </div>
-                        <div>
-                            <input type="submit" value="submit">
-                        </div>
-                    </form>
-                </div>
-               
-                
-            
-
-             </div>
-            </div>
-        </div>
-    </div>
- 
-  
-
-    </header>
-</body>
-</html>
-=======
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/cce18f0ce0.js"
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script
+      src="http://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <title>FLIP CARD</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    
-    <!-- first card -->
-    <div class="card-container">
-      <div class="front">
-        <img class="frontimage" src="a469d733-a9dc-41fd-82e8-62ff0a0fa902.jpg" style="width: 100%" />
-      </div>
-
-      <div class="back">
-        <h1 style="font-size:30px">Zoe Daniels</h1>
-        <p style="font-size:20px">Web development</p>
-        <p style="font-size:15px">I am awesome</p>
-      </div>
-
-    </div>
-
-
-    <!-- second card --> 
-    <div class="bottomclass">
-        <img class="oslinImg" src="a469d733-a9dc-41fd-82e8-62ff0a0fa902.jpg">
-        <h1 style="margin-left:150px">Oslin Johnson</h1>
-        <p style="margin-left:150px" class="title">CE0 & FOUNDER </p>
-        <p style="margin-left:150px" >Life Choices Academy</p>
-        <div class="icons">
-          <a href="#"><i class="fa fa-twitter fa-1x"></i></a>
-          <a href="#"><i class="fa fa-linkedin fa-1x"></i></a>
-          <a href="#"><i class="fa fa-facebook fa-1x"></i></a>
-         
+    <header>
+      <div id="header">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Web Development</h1>
+          <h3>Hi I'm Zoe Daniels from South Africa</h3>
         </div>
-       
-        <p style="margin-left:150px"><button>Contact</button></p>
+      </div>
+    </header>
+    <div
+      style="position: relative; left: 80px; top: 10px; background-color: black"
+    ></div>
+    <!--------about------->
+    <div id="about">
+      <div class="row">
+        <div class="about-col-1">
+          <img scr="img/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub title">About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia
+            nihil, perspiciatis maxime ullam, placeat illum nulla vitae optio
+            sit ab quo repudiandae doloribus eveniet.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('edcucation')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br />Web App Development</li>
+              <li>
+                <span>App Development</span><br />Building Android/IOS apps
+              </li>
+            </ul>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-current</span><br />UK/UK design training at ET
+                  institue
+                </li>
+                <li><span>2021-2021</span><br />Team lead at StarApp LLC.</li>
+                <li>
+                  <span>2020-2020</span><br />UK/UX Design Executive at col
+                  Degital LTD.
+                </li>
+                <li>
+                  <span>2019-2019</span><br />Internship at ekart ecommerce
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li><span>2019</span><br />UI/UX Training at ET Institute</li>
+                <li><span>2019</span><br />MBA from MIT Bangalore.</li>
+                <li><span>2019</span><br />BBA from ISM Banglore.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!--------services---------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              odio hic doloribus maxime, numquam voluptas soluta laboriosam
+              accusantium commodi animi, in dolores enim accusamus perspiciatis
+              corrupti asperiores, ipsum totam expedita?
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>UX/UX</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              odio hic doloribus maxime, numquam voluptas soluta laboriosam
+              accusantium commodi animi, in dolores enim accusamus perspiciatis
+              corrupti asperiores, ipsum totam expedita?
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              odio hic doloribus maxime, numquam voluptas soluta laboriosam
+              accusantium commodi animi, in dolores enim accusamus perspiciatis
+              corrupti asperiores, ipsum totam expedita?
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------portfolio----------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div
+            id="carouselExampleCaptions1"
+            class="carousel slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions1"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions1"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions1"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./girl.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  width="500px"
+                  height="720px"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./a469d733-a9dc-41fd-82e8-62ff0a0fa902.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  width="500px"
+                  height="720px"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./girl.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  width="500px"
+                  height="720px"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----testimonial-------->
+    <div class="card-container">
+
+      <div class="row">
+        <div class="col">
+         <div class="flip-card 1">
+            <div class="flip-card-inner">
+             <div class="flip-card-front">
+                <img
+                 src="./img/samantha-gades-BlIhVfXbi9s-unsplash - Copy.jpg"
+                  alt="Avatar"
+                  style="width: 300px; height: 300px"/>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+               <p>Architect & Engineer</p>
+               <p>We love that guy</p>
+             </div>
+            </div>
+          </div>
+       </div>
+     
+       <!-- end of card -->
+       <div class="col">
+         <div class="flip-card 2">
+           <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./img/samantha-gades-BlIhVfXbi9s-unsplash - Copy.jpg"
+                  alt="Avatar"
+                  style="width: 300px; height: 300px" />
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- end of card -->
+         <div class="col">
+          <div class="flip-card 3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="./img/samantha-gades-BlIhVfXbi9s-unsplash - Copy.jpg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- end of card -->
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="flip-card 4">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./img/samantha-gades-BlIhVfXbi9s-unsplash - Copy.jpg"
+                alt="Avatar"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of card -->
+
+      <div class="col">
+        <div class="flip-card 5">
+          <div class="flip-card-inner">
+             <div class="flip-card-front">
+               <img
+                 src="./img/samantha-gades-BlIhVfXbi9s-unsplash - Copy.jpg"
+                 alt="Avatar"
+                 style="width: 300px; height: 300px" />
+             </div>
+             <div class="flip-card-back">
+               <h1>John Doe</h1>
+               <p>Architect & Engineer</p>
+               <p>We love that guy</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- end of card -->
+   </div>
+      
+         
+      
+      
+
+    </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+<!----new flip card----->
+        <!-- Force next columns to break to new line at md breakpoint and up -->
+        <div class="w-100 d-none d-md-block"></div>
+
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+          </div>
+
+          <section class="contact">
+            <h1 class="title">get in touch</h1>
+
+            <div class="container">
+              <div class="contact-form row">
+                <div class="form-field col-lg-6">
+                  <input id="name" class="input-text" type="text" name="" />
+                  <label for="name" class="label">Name</label>
+                </div>
+                <div class="form-field col-lg-6">
+                  <input id="email" class="input-text" type="text" name="" />
+                  <label for="email" class="label">email</label>
+                </div>
+                <div class="form-field col-lg-6">
+                  <input
+                    id="Company name"
+                    class="input-text"
+                    type="text"
+                    name=""
+                  />
+                  <label for="Company name" class="label"> Company Name</label>
+                </div>
+                <div class="form-field col-lg-6">
+                  <input id="phone" class="input-text" type="text" name="" />
+                  <label for="phone" class="label">contact number</label>
+                </div>
+                <div class="form-field col-lg-12">
+                  <input id="message" class="input-text" type="text" name="" />
+                  <label for="message" class="label">message</label>
+                </div>
+                <div>
+                  <div class="form-field col-lg-12">
+                    <input
+                      class="submit-btn"
+                      type="submit"
+                      value="submit"
+                      name=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+              <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+              <div class="social icons"></div>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/zoe_faith_daniels/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/zoe-daniels-4290b4256"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="" class="btn">Download Cv</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var contents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
->>>>>>> 547e77e6bfe63e9116d2a27ca2fafcefcc0a7b0b
